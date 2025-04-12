@@ -1,36 +1,36 @@
 try:
-    a = float(input("Enter the first number: "))
-    b = float(input("Enter the second number: "))
-    print("Result:", a / b)
+    a = float(input("enter the first number: "))
+    b = float(input("enter the second number: "))
+    print("result:", a / b)
 except ZeroDivisionError:
-    print("You can't divide by zero.")
+    print("you can't divide by zero.")
 except ValueError:
-    print("Please enter valid numbers.")
+    print("please enter valid numbers.")
 
 
 fruits = ["apple", "banana", "peach"]
 try:
-    index = int(input("\nEnter an index (0-2): "))
+    index = int(input("enter an index (0-2): "))
     print("Selected:", fruits[index])
 except IndexError:
-    print("Index is out of range.")
+    print("Index is out of range")
 except ValueError:
-    print("Please enter a number.")
+    print("please enter number")
 
 
 
-info = {"name": "Anna", "age": 16}
-key = input("\nEnter a key (name or age): ")
+info = {"name": "Mari", "age": 15}
+key = input("enter a key (name or age): ")
 try:
     print("Value:", info[key])
 except KeyError:
-    print("Key not found.")
+    print("key not found")
 
 
 
 s = input("enter a number: ")
 try:
     num = int(s)
-    print("Converted number:", num)
+    print("converted number: ")
 except ValueError:
-    print("Invalid number.")
+    print("invalid number")
